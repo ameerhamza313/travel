@@ -6,6 +6,7 @@
     <title>Skywide Tours</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -90,24 +91,32 @@
             <img src="images/book-img.jpg" alt="">
         </div>
 
-        <form action="">
+        <form id="bookingForm">
             <div class="inputBox">
-                <h3>where to</h3>
-                <input type="text" placeholder="Destination name">
+                <h3>Full Name</h3>
+                <input type="text" name="fullname" placeholder="Your Full Name">
             </div>
             <div class="inputBox">
-                <h3>how many</h3>
-                <input type="number" placeholder="Number of people">
+                <h3>Email</h3>
+                <input type="email" name="email" placeholder="Your Email Address">
             </div>
             <div class="inputBox">
-                <h3>date of arrivals</h3>
-                <input type="date">
+                <h3>Where To</h3>
+                <input type="text" name="destination" placeholder="Destination Name">
             </div>
             <div class="inputBox">
-                <h3>date of leaving</h3>
-                <input type="date">
+                <h3>How Many</h3>
+                <input type="number" name="numPeople" placeholder="Number of People">
             </div>
-            <input type="submit" class="btn" value="book now">
+            <div class="inputBox">
+                <h3>Date of Arrival</h3>
+                <input type="date" name="arrivalDate">
+            </div>
+            <div class="inputBox">
+                <h3>Date of Departure</h3>
+                <input type="date" name="departureDate">
+            </div>
+            <input type="submit" class="btn" value="Book Now">
         </form>
 
     </div>
